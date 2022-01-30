@@ -6,8 +6,7 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour 
 {  
-
-    public GameObject[] objects;
+      
 
     public List<Material> allMaterials = new List<Material>();
 
@@ -16,8 +15,7 @@ public class Obstacle : MonoBehaviour
    
 
     void Start()
-    {
-        
+    {       
        
         allChildRenderers = GetComponentsInChildren<Renderer>();
 
@@ -27,9 +25,8 @@ public class Obstacle : MonoBehaviour
             {
                 allMaterials.Add(mat);
             }
-        }     
-
-        
+        }
+       
        
     }
    

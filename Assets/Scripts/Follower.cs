@@ -50,6 +50,7 @@ public class Follower : MonoBehaviour
 		var e = m_Path.nodes.GetEnumerator();
 		while (e.MoveNext())
 		{
+			
 			m_Current = e.Current;
 
 			// Wait until we reach the current target node and then go to next node

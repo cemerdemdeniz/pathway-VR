@@ -9,7 +9,15 @@ public class Bullet : MonoBehaviour
         IInteractable interactable = other.gameObject.GetComponent<IInteractable>();       
         if (interactable != null)
         {
-            interactable.TakeDamage();           
+            interactable.TakeDamage();
+            StartCoroutine(DestroyAfterInteract(1.5f));
         }
+    }
+
+    IEnumerator DestroyAfterInteract(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
+       
     }
 }
