@@ -4,7 +4,7 @@ using UnityEngine;
 
 
 
-public class Obstacle : MonoBehaviour
+public class Obstacle : MonoBehaviour 
 {  
 
     public GameObject[] objects;
@@ -12,9 +12,9 @@ public class Obstacle : MonoBehaviour
     public List<Material> allMaterials = new List<Material>();
 
     public Renderer[] allChildRenderers;
- 
 
    
+
     void Start()
     {
         
@@ -31,8 +31,9 @@ public class Obstacle : MonoBehaviour
 
         
        
-    }  
+    }
    
-   
+
+
 
 }

@@ -9,7 +9,7 @@ using UnityEngine;
 /// </summary>
 public class Graph : MonoBehaviour
 {
-
+	
 	/// <summary>
 	/// The nodes.
 	/// </summary>
