@@ -79,6 +79,8 @@ public class Graph : MonoBehaviour
 			// Ordering the unvisited list by distance, smallest distance at start and largest at end
 			unvisited = unvisited.OrderBy(node => distances[node]).ToList();
 
+			
+
 			// Getting the Node with smallest distance
 			Node current = unvisited[0];
 

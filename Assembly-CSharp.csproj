@@ -191,6 +191,7 @@
     <Compile Include="Assets\Scripts\Follower.cs" />
     <Compile Include="Assets\Scripts\Graph.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\PathSystem.cs" />
     <Compile Include="Assets\Scripts\ProjectTile.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
