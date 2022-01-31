@@ -5,14 +5,11 @@ using UnityEngine;
 
 
 public class Obstacle : MonoBehaviour 
-{  
-      
+{        
 
     public List<Material> allMaterials = new List<Material>();
 
-    public Renderer[] allChildRenderers;
-
-   
+    public Renderer[] allChildRenderers;   
 
     void Start()
     {       
