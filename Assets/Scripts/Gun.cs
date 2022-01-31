@@ -12,28 +12,14 @@ public class Gun : MonoBehaviour
 
     Material m_Material;    
 
-    Obstacle obstacleColor;
-
-    public GameObject obstacle;
-
-    
-
-   
-
-
     private void Start()
     {
-
-        obstacleColor = obstacle.GetComponent<Obstacle>();       
         m_Material = GetComponent<Renderer>().material;      
-       
     }
-
-   
 
     public void EnterBlueObstacle()
     {
-        if (m_Material.color == Color.blue && obstacleColor.allChildRenderers[0].material.color == Color.blue)
+        if (m_Material.color == Color.blue)
         {
             Fire(true);
         }
@@ -43,7 +29,7 @@ public class Gun : MonoBehaviour
     public void EnterGreenObstacle()
     {
         
-        if (m_Material.color == Color.green && obstacleColor.allChildRenderers[1].material.color == Color.green)
+        if (m_Material.color == Color.green)
         {
             Fire(true);
         }
@@ -53,14 +39,13 @@ public class Gun : MonoBehaviour
     public void EnterMagentaObstacle()
     {
         
-        if (m_Material.color == Color.magenta && obstacleColor.allChildRenderers[2].material.color == Color.magenta)
+        if (m_Material.color == Color.magenta)
         {
            
             Fire(true);
         }
 
     }
-
     public bool Fire(bool check)
     {
 

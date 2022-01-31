@@ -198,10 +198,13 @@
     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
     <Compile Include="Assets\Scripts\MainMenuUI.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
-    <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\ObstacleHealth.cs" />
     <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
     <Compile Include="Assets\Scripts\PathSystem.cs" />
+    <Compile Include="Assets\Scripts\PointTrigger.cs" />
+    <Compile Include="Assets\Scripts\PointTriggerGreen.cs" />
+    <Compile Include="Assets\Scripts\PointTriggerMagenta.cs" />
+    <Compile Include="Assets\Scripts\PointerBlue.cs" />
     <Compile Include="Assets\Scripts\UIManager.cs" />
     <None Include="Assets\GoogleVR\Shaders\GvrUIOverlayFont.shader" />
     <None Include="Assets\GoogleVR\Shaders\GvrReticleShader.shader" />

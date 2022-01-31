@@ -1,7 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BehaviourOnPoint
     - Bullet
+    - EndPoint
     - Follower
     - Graph
     - Gun
@@ -9,9 +11,13 @@ ScriptsOnlyBuild:
     - GvrPointerInputModule
     - GvrPointerPhysicsRaycaster
     - GvrReticlePointer
+    - MainMenuUI
     - Node
-    - Obstacle
     - ObstacleHealth
+    - ObstacleSpawner
+    - PointTrigger
+    - PointTriggerGreen
+    - PointTriggerMagenta
     - UIManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -27,7 +33,85 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
   sceneClasses:
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11310}
+    - Class: 114
+      Script: {instanceID: 11312}
+    - Class: 114
+      Script: {instanceID: 11314}
+    - Class: 114
+      Script: {instanceID: 11316}
+    - Class: 114
+      Script: {instanceID: 11578}
+    - Class: 114
+      Script: {instanceID: 11640}
+    - Class: 114
+      Script: {instanceID: 11776}
+    - Class: 114
+      Script: {instanceID: 12406}
+    - Class: 114
+      Script: {instanceID: 12542}
+    - Class: 114
+      Script: {instanceID: 12876}
+    - Class: 114
+      Script: {instanceID: 13008}
+    - Class: 114
+      Script: {instanceID: 13052}
+    - Class: 114
+      Script: {instanceID: 13396}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/TestingScene.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -68,35 +152,47 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11318}
     - Class: 114
-      Script: {instanceID: 11320}
+      Script: {instanceID: 11568}
     - Class: 114
-      Script: {instanceID: 11564}
+      Script: {instanceID: 11578}
     - Class: 114
-      Script: {instanceID: 11574}
+      Script: {instanceID: 11640}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11776}
     - Class: 114
-      Script: {instanceID: 11772}
+      Script: {instanceID: 11808}
     - Class: 114
-      Script: {instanceID: 11804}
+      Script: {instanceID: 11900}
     - Class: 114
-      Script: {instanceID: 11896}
+      Script: {instanceID: 12204}
     - Class: 114
-      Script: {instanceID: 12200}
+      Script: {instanceID: 12406}
     - Class: 114
-      Script: {instanceID: 12402}
+      Script: {instanceID: 12428}
     - Class: 114
-      Script: {instanceID: 12866}
+      Script: {instanceID: 12772}
     - Class: 114
-      Script: {instanceID: 12998}
+      Script: {instanceID: 12876}
     - Class: 114
-      Script: {instanceID: 13042}
+      Script: {instanceID: 13008}
     - Class: 114
-      Script: {instanceID: 13100}
+      Script: {instanceID: 13052}
     - Class: 114
-      Script: {instanceID: 13288}
+      Script: {instanceID: 13112}
     - Class: 114
-      Script: {instanceID: 13382}
+      Script: {instanceID: 13300}
+    - Class: 114
+      Script: {instanceID: 13364}
+    - Class: 114
+      Script: {instanceID: 13396}
+    - Class: 114
+      Script: {instanceID: 13426}
+    - Class: 114
+      Script: {instanceID: 37622}
+    - Class: 114
+      Script: {instanceID: 40286}
+    - Class: 114
+      Script: {instanceID: 41810}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -120,12 +216,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Text
-  - hash:
-      serializedVersion: 2
-      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.EventSystems
-    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 5f1752ed2092162f016c19510c28a8b9
@@ -236,12 +326,6 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: fdb556aa85b6c238e029e1c77aeb94cb
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Obstacle
-  - hash:
-      serializedVersion: 2
       Hash: 89f9a1b4c64db9559e39f4a2e3bfaadd
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -266,7 +350,7 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
-      Hash: b55334558aa006282f9a0e64aed89547
+      Hash: 43d6b8cdc8ff84a6d6461fab46d83f99
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Gun
@@ -488,6 +572,12 @@ ScriptsOnlyBuild:
     className: GvrTrackedController
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BehaviourOnPoint
+  - hash:
+      serializedVersion: 2
       Hash: 1f8286dbbba9b39b9120dec32b8944e4
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -504,6 +594,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: b8a3e99dbdb0759cc56149df2fba8907
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MainMenuUI
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -570,6 +666,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EndPoint
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -734,6 +836,12 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
+      Hash: ac3eebbbc5e0f2cb6790dc8c8d18ef73
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ObstacleSpawner
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -756,6 +864,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
   - hash:
       serializedVersion: 2
       Hash: 5dea360fb0b147724ac344e6f399c2f3
@@ -830,6 +944,12 @@ ScriptsOnlyBuild:
     className: GvrXREventsSubscriber
   - hash:
       serializedVersion: 2
+      Hash: 28e5b9084376b21cb5b62d0ba3d74774
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointerBlue
+  - hash:
+      serializedVersion: 2
       Hash: 719e5a8f63dda20dad1ba86875c22268
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleVR.VideoDemo
@@ -852,7 +972,26 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointTriggerGreen
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PointTriggerMagenta
   platform: 13
   scenePathNames:
+  - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/TestingScene.unity
-  playerPath: C:/Users/C-e-d/Downloads/apktest/test3.apk
+  playerPath: C:/Users/C-e-d/Downloads/apktest/test4.apk

@@ -11,6 +11,7 @@ public class ObstacleHealth : MonoBehaviour , IInteractable
     public GameObject healthbarUI;
     public Slider slider;
 
+   
     private void Start()
     {
         health = maxHealth;
