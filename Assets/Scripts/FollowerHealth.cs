@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class FollowerHealth : MonoBehaviour, IInteractableWithObstacle
@@ -8,8 +9,11 @@ public class FollowerHealth : MonoBehaviour, IInteractableWithObstacle
 
     public GameObject healthbarUI;
     public Slider slider;
+
+    GameSceneManagement _scenes;
     void Start()
     {
+        _scenes = GameObject.Find("GameSceneManagement").GetComponent<GameSceneManagement>();
         health = maxHealth;
         slider.value = CalculateHealth();
     }
@@ -22,7 +26,10 @@ public class FollowerHealth : MonoBehaviour, IInteractableWithObstacle
             healthbarUI.SetActive(true);
 
         if (health <= 0)
-            Destroy(this.gameObject);
+        {
+            StartCoroutine(OnDeadFollower(0.25f));
+        }
+           
 
         if (health > maxHealth)
             health = maxHealth;
@@ -39,7 +46,13 @@ public class FollowerHealth : MonoBehaviour, IInteractableWithObstacle
         health -= 50;
     }
 
-    
+
+    IEnumerator OnDeadFollower(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(this.gameObject);
+        
+    }
 
 
 }

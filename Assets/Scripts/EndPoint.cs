@@ -14,7 +14,6 @@ public class EndPoint : MonoBehaviour ,IBehaviourOnPoint
     IEnumerator ArrivedToEndPoint(float delay)
     {
         yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
    

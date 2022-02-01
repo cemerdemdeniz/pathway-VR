@@ -9,9 +9,7 @@ public class ObstacleSpawner : MonoBehaviour
     {
         ObjectSpawner();
 
-    }
-
-   
+    }   
 
     void ObjectSpawner()
     {

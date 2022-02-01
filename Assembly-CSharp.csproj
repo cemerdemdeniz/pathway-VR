@@ -193,6 +193,7 @@
     <Compile Include="Assets\Scripts\EndPoint.cs" />
     <Compile Include="Assets\Scripts\Follower.cs" />
     <Compile Include="Assets\Scripts\FollowerHealth.cs" />
+    <Compile Include="Assets\Scripts\GameSceneManagement.cs" />
     <Compile Include="Assets\Scripts\Graph.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\GvrButton.cs" />

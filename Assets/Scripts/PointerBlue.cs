@@ -16,7 +16,7 @@ public class PointerBlue : MonoBehaviour, IPointerEnterHandler
     public void OnPointerEnter(PointerEventData eventData)
     {
        
-             _gun.EnterBlueObstacle();
+       _gun.EnterBlueObstacle();
 
     }
 }

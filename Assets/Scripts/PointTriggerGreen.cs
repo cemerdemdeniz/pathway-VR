@@ -6,6 +6,11 @@ using UnityEngine.EventSystems;
 public class PointTriggerGreen : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     Gun gun;
+
+    void Start()
+    {
+        gun = GameObject.Find("Gun").GetComponent<Gun>();
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         gun.EnterGreenObstacle();
@@ -15,12 +20,8 @@ public class PointTriggerGreen : MonoBehaviour, IPointerEnterHandler, IPointerEx
     {
 
     }
-
    
-    void Start()
-    {
-        gun = GameObject.Find("Gun").GetComponent<Gun>();
-    }
+   
 
    
 }

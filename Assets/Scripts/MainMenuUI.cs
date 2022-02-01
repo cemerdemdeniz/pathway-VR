@@ -7,9 +7,15 @@ public class MainMenuUI : MonoBehaviour
     public GameObject _optionMenu;
     public GameObject _start;
     public GameObject _difficulty;
+    GameSceneManagement _scenes;
+    private void Start()
+    {
+        _scenes = GameObject.Find("GameSceneManagement").GetComponent<GameSceneManagement>();
+
+    }
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _scenes.LoadNextScene();
     }
 
     public void OptionsMenu()
@@ -17,11 +23,7 @@ public class MainMenuUI : MonoBehaviour
         _difficulty.SetActive(true);
     }
 
-    public void Difficulty()
-    {
-      
-        
-    }  
+   
 
 
 
