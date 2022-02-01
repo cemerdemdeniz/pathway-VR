@@ -386,9 +386,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 286904503}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e0bbd1004e57747b393b0ef7e559ba, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2584467c827bf4cb525543dc1a7ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gun: {fileID: 776965775}
 --- !u!4 &322392841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5736437183992386420, guid: dffc9f12e6e89a0429358cf73ff73165,
@@ -1009,7 +1010,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877827574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6860514, y: 0, z: -4.106571}
+  m_LocalPosition: {x: 9.230981, y: 0, z: 9.399723}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1536,9 +1537,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1303092154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e0bbd1004e57747b393b0ef7e559ba, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2584467c827bf4cb525543dc1a7ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gun: {fileID: 776965775}
 --- !u!1 &1329626546
 GameObject:
   m_ObjectHideFlags: 0
@@ -2210,8 +2212,8 @@ GameObject:
   - component: {fileID: 1621132380}
   - component: {fileID: 1621132379}
   - component: {fileID: 1621132378}
-  - component: {fileID: 1621132381}
   - component: {fileID: 1621132382}
+  - component: {fileID: 1621132381}
   m_Layer: 5
   m_Name: ChangeColour (Green)
   m_TagString: Untagged
@@ -2355,9 +2357,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1621132376}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e0bbd1004e57747b393b0ef7e559ba, type: 3}
+  m_Script: {fileID: 11500000, guid: fd2584467c827bf4cb525543dc1a7ba6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gun: {fileID: 776965775}
 --- !u!4 &1672942303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229585486246931625, guid: 4499c7eac3beec64c8f73dd5661891f3,

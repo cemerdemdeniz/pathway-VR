@@ -6,6 +6,11 @@ using UnityEngine.EventSystems;
 public class PointTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     Gun gun;
+
+    void Start()
+    {
+        gun = GameObject.Find("Gun").GetComponent<Gun>();
+    }
     public void OnPointerEnter(PointerEventData eventData)
     {
         StartCoroutine(OnPointerEnter(1));
@@ -14,12 +19,7 @@ public class PointTrigger : MonoBehaviour, IPointerEnterHandler, IPointerExitHan
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        
-    }
 
-    void Start()
-    {
-        gun = GameObject.Find("Gun").GetComponent<Gun>();
     }
     IEnumerator OnPointerEnter(float delay)
     {
