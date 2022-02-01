@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 1567401875086498464}
   - component: {fileID: 1567401875086498466}
   - component: {fileID: 1567401875086498467}
+  - component: {fileID: 1926028916777973619}
   m_Layer: 0
   m_Name: Obstacle (Green)
   m_TagString: Obstacle
@@ -494,6 +495,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 029356dbc7cfbf4429a8228550b3e9b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1926028916777973619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1567401875086498461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb726367135ff1e4d9ca117ad1c09c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1567401875193556653

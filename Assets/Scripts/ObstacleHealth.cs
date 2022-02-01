@@ -23,19 +23,13 @@ public class ObstacleHealth : MonoBehaviour , IInteractable
         slider.value = CalculateHealth();
 
         if(health < maxHealth)
-        {
             healthbarUI.SetActive(true);
-        }
 
         if (health <= 0)
-        {
             Destroy(gameObject);
-        }
 
         if(health > maxHealth)
-        {
             health = maxHealth;
-        }
     }
 
     float CalculateHealth()

@@ -103,6 +103,7 @@ GameObject:
   - component: {fileID: 9092892917057311312}
   - component: {fileID: 9092892917057311318}
   - component: {fileID: 9092892917057311313}
+  - component: {fileID: 5605932523100656885}
   m_Layer: 0
   m_Name: Obstacle(Blue)
   m_TagString: Obstacle
@@ -211,6 +212,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b8f6284f7055f0478f27fa7bc278368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5605932523100656885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9092892917057311319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb726367135ff1e4d9ca117ad1c09c75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &9092892917299206322

@@ -192,14 +192,17 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\EndPoint.cs" />
     <Compile Include="Assets\Scripts\Follower.cs" />
+    <Compile Include="Assets\Scripts\FollowerHealth.cs" />
     <Compile Include="Assets\Scripts\Graph.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\GvrButton.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IBehaviourOnPoint.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IInteractWithObstacle.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
     <Compile Include="Assets\Scripts\MainMenuUI.cs" />
     <Compile Include="Assets\Scripts\Node.cs" />
     <Compile Include="Assets\Scripts\ObstacleHealth.cs" />
+    <Compile Include="Assets\Scripts\ObstacleInteractWithFollower.cs" />
     <Compile Include="Assets\Scripts\ObstacleSpawner.cs" />
     <Compile Include="Assets\Scripts\PathSystem.cs" />
     <Compile Include="Assets\Scripts\PointTrigger.cs" />
