@@ -17,7 +17,10 @@ public class UIManager : MonoBehaviour
         {
             _returnMenuUI.SetActive(true);
         }
-        else _returnMenuUI.SetActive(false);
+        else
+        {
+            _returnMenuUI.SetActive(false);
+        }
     }
 
     public void ChangeColourGreen()
