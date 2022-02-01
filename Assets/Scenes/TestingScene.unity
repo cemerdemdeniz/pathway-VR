@@ -243,6 +243,7 @@ GameObject:
   - component: {fileID: 286904505}
   - component: {fileID: 286904508}
   - component: {fileID: 286904509}
+  - component: {fileID: 286904510}
   m_Layer: 5
   m_Name: 'ChangeColour (Purple) '
   m_TagString: Untagged
@@ -366,8 +367,23 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1407900111}
-          m_MethodName: ChangeColourPurple
+        - m_Target: {fileID: 286904510}
+          m_MethodName: GvrOn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 286904510}
+          m_MethodName: GvrOff
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -390,6 +406,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 776965775}
+--- !u!114 &286904510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286904503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65e8e7212e73074698f8f6bdb6d29a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillCircle: {fileID: 1501142120}
+  GVRClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1407900111}
+        m_MethodName: ChangeColourPurple
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  totalTime: 1
+  gvrTimer: 0
 --- !u!4 &322392841 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5736437183992386420, guid: dffc9f12e6e89a0429358cf73ff73165,
@@ -729,7 +774,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 79cfa4c430e681e4f90445304f9b52e1, type: 2}
+  - {fileID: 2100000, guid: 62305fd08f466d64d8b88c1d48c0bb0f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1010,7 +1055,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 877827574}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.230981, y: 0, z: 9.399723}
+  m_LocalPosition: {x: 1.47, y: 0, z: 0.4917252}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1394,6 +1439,7 @@ GameObject:
   - component: {fileID: 1303092156}
   - component: {fileID: 1303092159}
   - component: {fileID: 1303092160}
+  - component: {fileID: 1303092161}
   m_Layer: 5
   m_Name: ChangeColour (Blue)
   m_TagString: Untagged
@@ -1517,8 +1563,23 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1407900111}
-          m_MethodName: ChangeColourBlue
+        - m_Target: {fileID: 1303092161}
+          m_MethodName: GvrOn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1303092161}
+          m_MethodName: GvrOff
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1541,6 +1602,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 776965775}
+--- !u!114 &1303092161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1303092154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65e8e7212e73074698f8f6bdb6d29a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillCircle: {fileID: 1501142120}
+  GVRClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1407900111}
+        m_MethodName: ChangeColourBlue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  totalTime: 1
+  gvrTimer: 0
 --- !u!1 &1329626546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1912,6 +2002,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca86f6373823fa46b02cb194780d8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1501142120 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7017706040979061591, guid: bef0f0349666e8a4e8971dfc916eb500,
+    type: 3}
+  m_PrefabInstance: {fileID: 1822294530}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1514859229 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6469493705311252943, guid: 40ca9ce7c30798142bd6bfc08220ce56,
@@ -2214,6 +2316,7 @@ GameObject:
   - component: {fileID: 1621132378}
   - component: {fileID: 1621132382}
   - component: {fileID: 1621132381}
+  - component: {fileID: 1621132383}
   m_Layer: 5
   m_Name: ChangeColour (Green)
   m_TagString: Untagged
@@ -2337,8 +2440,23 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1407900111}
-          m_MethodName: ChangeColourGreen
+        - m_Target: {fileID: 1621132383}
+          m_MethodName: GvrOn
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1621132383}
+          m_MethodName: GvrOff
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2361,6 +2479,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gun: {fileID: 776965775}
+--- !u!114 &1621132383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1621132376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e65e8e7212e73074698f8f6bdb6d29a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fillCircle: {fileID: 1501142120}
+  GVRClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1407900111}
+        m_MethodName: ChangeColourGreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  totalTime: 1
+  gvrTimer: 0
 --- !u!4 &1672942303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3229585486246931625, guid: 4499c7eac3beec64c8f73dd5661891f3,
@@ -2649,6 +2796,135 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca86f6373823fa46b02cb194780d8fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1822294530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1605265466}
+    m_Modifications:
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1430
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 298
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.010000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.010000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.77
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9712521
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.23805359
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 7.5784203e-13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -1.2625572e-13
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -27.543001
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310044, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7017706040284310047, guid: bef0f0349666e8a4e8971dfc916eb500,
+        type: 3}
+      propertyPath: m_Name
+      value: FillingCircle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bef0f0349666e8a4e8971dfc916eb500, type: 3}
 --- !u!4 &1823904070 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 86600694635910944, guid: 365a12bb7c049524789961c924df1215,

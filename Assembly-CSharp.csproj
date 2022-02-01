@@ -188,13 +188,13 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\GvrCursorHelper.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
-    <Compile Include="Assets\GvrButton.cs" />
     <Compile Include="Assets\Scripts\BehaviourOnPoint.cs" />
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\EndPoint.cs" />
     <Compile Include="Assets\Scripts\Follower.cs" />
     <Compile Include="Assets\Scripts\Graph.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
+    <Compile Include="Assets\Scripts\GvrButton.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IBehaviourOnPoint.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
     <Compile Include="Assets\Scripts\MainMenuUI.cs" />
