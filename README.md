@@ -14,6 +14,9 @@ In this example we are going to find the shortest path from **Node A** to **Node
 
 ![Sample 1](https://i.imgur.com/WHQn8lf.gif)
 
+
+
+
 #
 
 
@@ -27,5 +30,4 @@ In this example we are going to find the shortest path from **Node A** to **Node
 
 ![Giff](Docs/giff/giff1.gif)
 ![Giff](Docs/giff/giff2.gif)
-![Giff](Docs/giff/giff3.gif)
-![Giff](Docs/giff/giff4.gif)
+
