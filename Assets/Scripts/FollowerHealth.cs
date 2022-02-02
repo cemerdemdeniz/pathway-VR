@@ -2,10 +2,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class FollowerHealth : MonoBehaviour, IInteractableWithObstacle
+public class FollowerHealth : HealthSystem, IInteractableWithObstacle
 {
-    public float health;
-    public float maxHealth;
 
     public GameObject healthbarUI;
     public Slider slider;
@@ -22,37 +20,49 @@ public class FollowerHealth : MonoBehaviour, IInteractableWithObstacle
     {
         slider.value = CalculateHealth();
 
+        LessThanMaxHealth();
+        LessThanZero();
+        GreaterThanMaxHealth();
+    }
+    
+    public void InteractObstacle()
+    {
+        health -= 50;
+    }   
+   
+
+    public override float CalculateHealth()
+    {
+        return health / maxHealth;
+    }
+
+    public override bool LessThanMaxHealth()
+    {
         if (health < maxHealth)
             healthbarUI.SetActive(true);
+        return true;
+    }
 
+    public override bool GreaterThanMaxHealth()
+    {
+        if (health > maxHealth)
+            health = maxHealth;
+        return true;
+    }
+
+    public override bool LessThanZero()
+    {
         if (health <= 0)
         {
             StartCoroutine(OnDeadFollower(0.25f));
         }
-           
-
-        if (health > maxHealth)
-            health = maxHealth;
-
-
+        return true;
     }
-    float CalculateHealth()
-    {
-        return health / maxHealth;
-
-    }
-    public void InteractObstacle()
-    {
-        health -= 50;
-    }
-
 
     IEnumerator OnDeadFollower(float delay)
     {
         yield return new WaitForSeconds(delay);
         Destroy(this.gameObject);
-        
+
     }
-
-
 }

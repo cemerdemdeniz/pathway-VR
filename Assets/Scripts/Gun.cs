@@ -48,8 +48,6 @@ public class Gun : MonoBehaviour
     }
     public bool Fire(bool check)
     {
-
-
         Ray ray = cam.ViewportPointToRay(new Vector3(0.5f, 0.5f, 0));
         RaycastHit hit;
         Vector3 targetPoint;
